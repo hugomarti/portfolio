@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Box } from "@chakra-ui/core";
+import HomePage from "./Pages/HomePage";
+import Work from "./Pages/Work";
+import About from "./Pages/About";
+import SayHello from "./Pages/SayHello";
+import { Route } from "react-router-dom";
+import ProjectPage from "./Pages/ProjectPage";
+
+import { cards } from "./data/projects";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/work" render={() => <Work cards={cards} />} />
+      <Route path="/about" component={About} />
+      <Route path="/say-hello" component={SayHello} />
+      <Route path="/project/:projectId" render={() => <ProjectPage />} />
+    </Box>
   );
 }
 
