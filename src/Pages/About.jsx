@@ -9,7 +9,7 @@ const About = () => {
   return (
     <PageLayout>
       <BigImage image={AboutImage} />
-      <LinkAndStuff footer="Kamalele">
+      <LinkAndStuff>
         <AboutCard />
       </LinkAndStuff>
     </PageLayout>

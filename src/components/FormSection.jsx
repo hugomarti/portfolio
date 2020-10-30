@@ -12,7 +12,7 @@ import React from "react";
 const FormSection = () => {
   return (
     <Box>
-      <Heading mb="1rem" size="4xl" color="#EB5E28">
+      <Heading mb="1rem" size="2xl" color="#EB5E28">
         .sayHello
       </Heading>
       <Flex
@@ -21,6 +21,7 @@ const FormSection = () => {
         bg="#403D39"
         rounded="md"
         p="2rem"
+        maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
       >
         <FormLabel color="#CCC5B9">Name:</FormLabel>
         <Input

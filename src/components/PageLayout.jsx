@@ -6,7 +6,7 @@ const PageLayout = ({ children }) => {
     <Flex
       h={{ xl: "100vh", lg: "100vh", md: "100vh" }}
       flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
-      w={{ xl: "80vw", lg: "100vw", md: "100vw", base: "100vw" }}
+      w={{ xl: "70vw", lg: "100vw", md: "100vw", base: "100vw" }}
       margin="auto"
     >
       {children}

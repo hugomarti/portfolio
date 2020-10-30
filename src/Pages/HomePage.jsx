@@ -16,7 +16,7 @@ const HomePage = () => {
           </Text>
         }
       >
-        <Flex ml="2rem" h="60vh" alignItems="center">
+        <Flex ml="2rem" h="60vh" alignItems="center" m="auto">
           <Heading color="#CCC5B9">
             <span style={{ color: "#EB5E28" }}>FRONTEND</span>
             <br />

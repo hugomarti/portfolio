@@ -6,7 +6,7 @@ import Hugo from "../assets/hugo.png";
 const AboutCard = () => {
   return (
     <Box>
-      <Heading size="4xl" color="#EB5E28" mb="1rem">
+      <Heading size="2xl" color="#EB5E28" mb="1rem">
         .about
       </Heading>
       <Flex
@@ -15,6 +15,7 @@ const AboutCard = () => {
         rounded="md"
         p="2rem"
         bg="#403D39"
+        maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
       >
         <Image h="150px" mb="1rem" rounded="30px" src={Hugo} />
 

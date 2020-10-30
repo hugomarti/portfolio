@@ -13,10 +13,11 @@ const Work = ({ cards }) => {
       <BigImage image={WorkImage} />
       <LinkAndStuff footer="Kamalele">
         <Box>
-          <Heading size="4xl" color="#EB5E28" mb="1rem">
+          <Heading size="2xl" color="#EB5E28" mb="1rem">
             .work
           </Heading>
           <SimpleGrid
+            maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
             columns={{ xl: 2, lg: 2, md: 2, base: 1 }}
             spacing="0.5rem"
           >
