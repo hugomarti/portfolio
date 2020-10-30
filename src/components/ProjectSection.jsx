@@ -15,6 +15,7 @@ const ProjectSection = ({ data }) => {
         p="1rem"
         bg="#403D39"
         maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
+        h="34rem"
       >
         <Flex flexDir="column">
           <Image src={data.logo} />

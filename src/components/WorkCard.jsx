@@ -6,7 +6,7 @@ import { IoIosMore } from "react-icons/io";
 const WorkCard = ({ data: { logo, title, route } }) => {
   const history = useHistory();
   return (
-    <Flex h="334px" p="1rem" flexDir="column" rounded="md" bg="#403D39">
+    <Flex h="16rem" p="1rem" flexDir="column" rounded="md" bg="#403D39">
       <Flex justifyContent="center" alignItems="center" h="90%">
         <Image my="1rem" src={logo} />
       </Flex>
