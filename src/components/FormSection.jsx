@@ -21,7 +21,8 @@ const FormSection = () => {
         bg="#403D39"
         rounded="md"
         p="2rem"
-        maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
+        // maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
+        w="50vw"
       >
         <FormLabel color="#CCC5B9">Name:</FormLabel>
         <Input
