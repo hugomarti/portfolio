@@ -1,23 +1,17 @@
-import { Box, Flex, Image, Text, Heading } from "@chakra-ui/core";
+import { Box, Image, Text, Heading } from "@chakra-ui/core";
 import React from "react";
 
-import Hugo from "../assets/hugo.png";
+import Hugo from "../../assets/hugo.png";
+import CardLayout from "../CardLayout";
 
 const AboutCard = () => {
   return (
     <Box>
-      <Heading size="2xl" color="#EB5E28" mb="1rem">
+      <Heading letterSpacing="0.1rem" size="2xl" color="#EB5E28" mb="1rem">
         .about
       </Heading>
-      <Flex
-        flexDir="column"
-        alignItems="flex-start"
-        rounded="md"
-        p="2rem"
-        bg="#403D39"
-        maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
-      >
-        <Image h="150px" mb="1rem" rounded="30px" src={Hugo} />
+      <CardLayout>
+        <Image h="110px" mb="1rem" rounded="10px" src={Hugo} />
 
         <Text color="#CCC5B9">
           With fifteen years in the audio engineering and music business field,
@@ -29,7 +23,7 @@ const AboutCard = () => {
           the opportunity of entry level roles and internships to get a more
           indepth understanding of the industry.
         </Text>
-      </Flex>
+      </CardLayout>
     </Box>
   );
 };

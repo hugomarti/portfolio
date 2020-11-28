@@ -4,8 +4,17 @@ import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
 
 const Footer = ({ footerText }) => {
   return (
-    <Flex mt="2rem" alignItems="center" justifyContent="space-between">
-      <Flex>
+    <Flex
+      mt="2rem"
+      alignItems="center"
+      justifyContent="space-between"
+      zIndex="200000"
+      flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
+    >
+      <Flex
+        order={{ xl: "1", lg: "1", md: "1", base: "2" }}
+        mt={{ xl: "0", lg: "0", md: "0", base: "1rem" }}
+      >
         <Link
           href="https://www.linkedin.com/in/hugo-marti-5522461b0/"
           isExternal
@@ -28,7 +37,12 @@ const Footer = ({ footerText }) => {
       </Flex>
 
       {footerText && (
-        <Text fontWeight="600" color="#CCC5B9">
+        <Text
+          fontWeight="600"
+          color="#CCC5B9"
+          textAlign={{ xl: "left", lg: "left", md: "left", base: "center" }}
+          fontSize="1.2rem"
+        >
           {footerText}
         </Text>
       )}

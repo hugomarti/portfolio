@@ -2,11 +2,10 @@ import StemHatchLogo from "../assets/stemHatchLogo.svg";
 import LupasDeSolLogo from "../assets/lupasDeSolLogo.svg";
 import MovieDatabaseLogo from "../assets/movieDatabaseLogo.svg";
 import BitLogo from "../assets/8bitLogo.svg";
-
-import ProjectImage1 from "../assets/projectImage1.png";
-import ProjectImage2 from "../assets/projectImage2.png";
-import ProjectImage3 from "../assets/projectImage3.png";
-import ProjectImage4 from "../assets/projectImage4.png";
+import Project1BgImage from "../assets/projectImage1.png";
+import Project2BgImage from "../assets/projectImage2.png";
+import Project3BgImage from "../assets/projectImage3.png";
+import Project4BgImage from "../assets/projectImage4.png";
 
 export const cards = [
   {
@@ -40,7 +39,7 @@ export const cards = [
 
 export const projectPages = {
   stemHatch: {
-    bgImage: ProjectImage1,
+    bgImage: Project1BgImage,
     logo: StemHatchLogo,
     type: "Digital Music Store",
     title: ".stemHatch",
@@ -50,7 +49,7 @@ export const projectPages = {
     sourceCode: "https://github.com/hugomarti/stem-hatch-2",
   },
   lupasDeSol: {
-    bgImage: ProjectImage2,
+    bgImage: Project2BgImage,
     logo: LupasDeSolLogo,
     type: "Sunglasses eCormerce",
     title: ".lupasDeSol",
@@ -60,7 +59,7 @@ export const projectPages = {
     sourceCode: "https://github.com/hugomarti/lupas-de-sol",
   },
   movieDatabase: {
-    bgImage: ProjectImage3,
+    bgImage: Project3BgImage,
     logo: MovieDatabaseLogo,
     type: "Movie Database",
     title: ".movieDatabase",
@@ -70,7 +69,7 @@ export const projectPages = {
     sourceCode: "https://github.com/hugomarti/popcorn-db",
   },
   eightBit: {
-    bgImage: ProjectImage4,
+    bgImage: Project4BgImage,
     logo: BitLogo,
     type: "Game Items Store",
     title: "8Bit",

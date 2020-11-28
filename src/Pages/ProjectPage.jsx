@@ -3,7 +3,7 @@ import { useRouteMatch } from "react-router-dom";
 import { projectPages } from "../data/projects";
 
 import BigImage from "../components/BigImage";
-import LinkAndStuff from "../components/LinksAndStuff";
+import ContentaLayout from "../components/ContentLayout";
 import ProjectSection from "../components/ProjectSection";
 import PageLayout from "../components/PageLayout";
 
@@ -17,9 +17,9 @@ const ProjectPage = () => {
   return (
     <PageLayout>
       <BigImage image={bgImage} />
-      <LinkAndStuff back>
+      <ContentaLayout back>
         <ProjectSection data={matchProject} />
-      </LinkAndStuff>
+      </ContentaLayout>
     </PageLayout>
   );
 };

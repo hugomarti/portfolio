@@ -1,18 +1,17 @@
 import React from "react";
 
-import SayHelloImage from "../assets/sayHello.png";
 import BigImage from "../components/BigImage";
-import FormSection from "../components/FormSection";
-import LinkAndStuff from "../components/LinksAndStuff";
+import FormSection from "../components/SectionContent/FormSection";
+import ContentaLayout from "../components/ContentLayout";
 import PageLayout from "../components/PageLayout";
 
 const SayHello = () => {
   return (
     <PageLayout>
-      <BigImage image={SayHelloImage} />
-      <LinkAndStuff footer="Kamalele">
+      <BigImage image="https://i.ibb.co/8YWtf4h/sayHello.png" />
+      <ContentaLayout footer="Kamalele">
         <FormSection />
-      </LinkAndStuff>
+      </ContentaLayout>
     </PageLayout>
   );
 };

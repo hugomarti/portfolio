@@ -1,17 +1,18 @@
 import React from "react";
-import AboutImage from "../assets/about.png";
-import AboutCard from "../components/AboutCard";
+
+import AboutBgImage from "../assets/about.png";
+import AboutCard from "../components/SectionContent/AboutCard";
 import BigImage from "../components/BigImage";
-import LinkAndStuff from "../components/LinksAndStuff";
+import ContentaLayout from "../components/ContentLayout";
 import PageLayout from "../components/PageLayout";
 
 const About = () => {
   return (
     <PageLayout>
-      <BigImage image={AboutImage} />
-      <LinkAndStuff>
+      <BigImage image={AboutBgImage} />
+      <ContentaLayout>
         <AboutCard />
-      </LinkAndStuff>
+      </ContentaLayout>
     </PageLayout>
   );
 };
