@@ -20,6 +20,7 @@ const FormSection = () => {
             justifyContent="center"
             flexDir="column"
             w="100%"
+            textAlign="center"
           >
             <Heading color="#EB5E28" size="lg">
               Thanks for your message!

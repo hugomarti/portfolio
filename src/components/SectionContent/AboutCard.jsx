@@ -45,7 +45,6 @@ const AboutCard = () => {
               isExternal
             >
               <Button
-                href="https://drive.google.com/file/d/1Vjb7MFBP_BBU0QJSSICvmS6iDsVuFi0D/view?usp=sharing"
                 mb={{ xl: "", lg: "", md: "", base: "1rem" }}
                 leftIcon={<FiDownloadCloud />}
                 color="#CCC5B9"
