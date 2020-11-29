@@ -2,9 +2,9 @@ import React from "react";
 
 import AboutBgImage from "../assets/about.png";
 import AboutCard from "../components/SectionContent/AboutCard";
-import BigImage from "../components/BigImage";
-import ContentaLayout from "../components/ContentLayout";
-import PageLayout from "../components/PageLayout";
+import BigImage from "../components/SiteComponents/BigImage";
+import ContentaLayout from "../components/Layout/ContentLayout";
+import PageLayout from "../components/Layout/PageLayout";
 
 const About = () => {
   return (

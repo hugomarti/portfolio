@@ -1,6 +1,10 @@
 import React from "react";
 import { Box, Flex, Link, Text } from "@chakra-ui/core";
 import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
+
+const MotionBox = motion.custom(Box);
 
 const Footer = ({ footerText }) => {
   return (
@@ -8,7 +12,7 @@ const Footer = ({ footerText }) => {
       mt="2rem"
       alignItems="center"
       justifyContent="space-between"
-      zIndex="200000"
+      zIndex="10"
       flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
     >
       <Flex
@@ -22,7 +26,7 @@ const Footer = ({ footerText }) => {
           <Box
             color="#CCC5B9"
             _hover={{ color: "#EB5E28" }}
-            boxSize="2.5rem"
+            boxSize="2.2rem"
             as={IoLogoLinkedin}
           />
         </Link>
@@ -30,21 +34,39 @@ const Footer = ({ footerText }) => {
           <Box
             color="#CCC5B9"
             _hover={{ color: "#EB5E28" }}
-            boxSize="2.5rem"
+            boxSize="2.2rem"
             as={IoLogoGithub}
+          />
+        </Link>
+        <Link href="mailto: hgmarti@gmail.com" isExternal ml="1rem">
+          <Box
+            color="#CCC5B9"
+            _hover={{ color: "#EB5E28" }}
+            boxSize="2.2rem"
+            as={FiMail}
           />
         </Link>
       </Flex>
 
       {footerText && (
-        <Text
-          fontWeight="600"
-          color="#CCC5B9"
-          textAlign={{ xl: "left", lg: "left", md: "left", base: "center" }}
-          fontSize="1.2rem"
+        <MotionBox
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            ease: "easeOut",
+            duration: 1,
+            delay: 1,
+          }}
         >
-          {footerText}
-        </Text>
+          <Text
+            fontWeight="600"
+            color="#CCC5B9"
+            textAlign={{ xl: "left", lg: "left", md: "left", base: "center" }}
+            fontSize="1.2rem"
+          >
+            I am a frontend web developer <br /> based in Barcelona.
+          </Text>
+        </MotionBox>
       )}
     </Flex>
   );

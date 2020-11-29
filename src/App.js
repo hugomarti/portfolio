@@ -8,6 +8,7 @@ import SayHello from "./Pages/SayHello";
 import ProjectPage from "./Pages/ProjectPage";
 
 import { cards } from "./data/projects";
+import Skils from "./Pages/Skills";
 
 function App() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function App() {
       <Route exact path="/" component={HomePage} />
       <Route path="/work" render={() => <Work cards={cards} />} />
       <Route path="/about" component={About} />
+      <Route path="/skills" component={Skils} />
       <Route path="/say-hello" component={SayHello} />
       <Route path="/project/:projectId" render={() => <ProjectPage />} />
     </Switch>

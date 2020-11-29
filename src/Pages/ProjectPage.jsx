@@ -2,10 +2,10 @@ import React from "react";
 import { useRouteMatch } from "react-router-dom";
 import { projectPages } from "../data/projects";
 
-import BigImage from "../components/BigImage";
-import ContentaLayout from "../components/ContentLayout";
-import ProjectSection from "../components/ProjectSection";
-import PageLayout from "../components/PageLayout";
+import BigImage from "../components/SiteComponents/BigImage";
+import ContentaLayout from "../components/Layout/ContentLayout";
+import ProjectSection from "../components/SectionContent/ProjectSection";
+import PageLayout from "../components/Layout/PageLayout";
 
 const ProjectPage = () => {
   const match = useRouteMatch();
@@ -17,7 +17,7 @@ const ProjectPage = () => {
   return (
     <PageLayout>
       <BigImage image={bgImage} />
-      <ContentaLayout back>
+      <ContentaLayout>
         <ProjectSection data={matchProject} />
       </ContentaLayout>
     </PageLayout>

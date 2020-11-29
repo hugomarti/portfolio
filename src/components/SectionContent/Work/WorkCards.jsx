@@ -13,7 +13,7 @@ const WorkCards = ({ cards }) => {
         // maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
         w={{ xl: "30rem", lg: "30rem", md: "30rem", base: "82vw" }}
         columns={{ xl: 2, lg: 2, md: 2, base: 1 }}
-        spacing="0.5rem"
+        spacing={{ xl: "0.5rem", lg: "0.5rem", md: "0.5rem", base: "1rem" }}
         shadow="lg"
       >
         {cards.map((card) => (

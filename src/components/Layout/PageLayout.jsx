@@ -8,7 +8,6 @@ const PageLayout = ({ children }) => {
       flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
       w={{ xl: "100vw", lg: "100vw", md: "100vw", base: "100vw" }}
       margin="auto"
-      pos="relative"
     >
       {children}
     </Flex>

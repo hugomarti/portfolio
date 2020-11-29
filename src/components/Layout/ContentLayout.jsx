@@ -1,20 +1,19 @@
 import React from "react";
 import { Box, Flex, Image } from "@chakra-ui/core";
 import { motion } from "framer-motion";
-import HomeSvgCristal from "../assets/home-cristal.svg";
+import HomeSvgCristal from "../../assets/home-cristal.svg";
 
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../SiteComponents/NavBar";
+import Footer from "../SiteComponents/Footer";
 
 const MotionBox = motion.custom(Flex);
 const MotionBox2 = motion.custom(Box);
 
-const ContentaLayout = ({ children, footerText, back, svg }) => {
+const ContentaLayout = ({ children, footerText, back }) => {
   return (
     <Flex
       position="relative"
       w={{ xl: "70%", lg: "70%", md: "70%", base: "100vw" }}
-      // h={{ xl: "100vh", lg: "100vh", md: "100vh" }}
       h="100%"
       justifyContent="space-between"
       flexDir="column"
@@ -39,7 +38,7 @@ const ContentaLayout = ({ children, footerText, back, svg }) => {
         mt={{ xl: "0", lg: "0", md: "0", base: "2rem" }}
         h="100%"
         w="100%"
-        zIndex="10000"
+        zIndex="1"
       >
         {children}
       </MotionBox>

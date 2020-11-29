@@ -1,20 +1,20 @@
 import React from "react";
 
-import SayHelloBg from "../assets/sayHello.png";
+import SkillBg from "../assets/sayHello.png";
 import BigImage from "../components/SiteComponents/BigImage";
-import FormSection from "../components/SectionContent/Form/FormSection";
 import ContentaLayout from "../components/Layout/ContentLayout";
 import PageLayout from "../components/Layout/PageLayout";
+import SkillsSection from "../components/SectionContent/SkillsSection";
 
-const SayHello = () => {
+const Skils = () => {
   return (
     <PageLayout>
-      <BigImage image={SayHelloBg} />
+      <BigImage image={SkillBg} />
       <ContentaLayout footer="Kamalele">
-        <FormSection />
+        <SkillsSection />
       </ContentaLayout>
     </PageLayout>
   );
 };
 
-export default SayHello;
+export default Skils;

@@ -44,7 +44,7 @@ export const projectPages = {
     type: "Digital Music Store",
     title: ".stemHatch",
     description:
-      "Personal project currently under development, focused on selling music online, where music producers can sell their music rights to DJs and content creators. Made with React, Redux and styling with Chakra UI.",
+      "Stem Hatch is a personal project currently under development, focused on selling music online, where music producers can sell their music copy rights to DJs and content creators. Made with React, Redux, styled with Chakra UI and a previous UI and graphic design made with Figma and Illustrator",
     link: "https://lupas-de-sol.web.app/",
     sourceCode: "https://github.com/hugomarti/stem-hatch-2",
   },
@@ -54,7 +54,7 @@ export const projectPages = {
     type: "Sunglasses eCormerce",
     title: ".lupasDeSol",
     description:
-      "Sunglasses eComerce simulation. Products are oganized by genres and collections, all the database and authorization is handled by firebase and stripe for payments. Made with React, Redux and styling with Grommet UI.",
+      "Sunglasses eCommerce simulation. Products are organized by genres and collections, all the database and authorization is handled by Firebase and Stripe for payments. Made with React, Redux, styled with Grommet UI and a previous UI and graphic design made with Figma and Illustrator.",
     link: "https://lupas-de-sol.web.app/",
     sourceCode: "https://github.com/hugomarti/lupas-de-sol",
   },
@@ -64,7 +64,7 @@ export const projectPages = {
     type: "Movie Database",
     title: ".movieDatabase",
     description:
-      "Movie Database using TMBD API, movies can be searched, filter by genres, play trailers etc... Made with React, Redux and styled with Grommet UI.",
+      "Movie Database using TMBD API, I included features like search movies, filter by genres, play trailers etc... Made with React, Redux, Axios and styled with Grommet UI.Sunglasses eCommerce simulation. Products are organized by genres and collections, all the database and authorization is handled by Firebase and Stripe for payments. Made with React, Redux, styled with Grommet UI and a previous UI and graphic design made with Figma and Illustrator.",
     link: "https://5f9c00fae996fa096347eccb--popcorn-movie.netlify.app/",
     sourceCode: "https://github.com/hugomarti/popcorn-db",
   },
@@ -74,8 +74,53 @@ export const projectPages = {
     type: "Game Items Store",
     title: "8Bit",
     description:
-      "Game eComerce simulation, where you can add products, delete and add in the cart. Created with React, Redux and Chakra UI.",
+      "Game eCommerce simulation, where you can add and delete products in the cart. Made with React, Redux, and Chakra UI.",
     link: "https://5f9c005a668f071cbccc7837--8bit-store.netlify.app/",
     sourceCode: "https://github.com/hugomarti/8bit-ecomerce",
   },
 };
+
+export const skillsData = [
+  {
+    id: 1,
+    name: ".react",
+    value: 95,
+    delay: 1,
+  },
+  {
+    id: 2,
+    name: ".html&CSS",
+    value: 90,
+    delay: 1.2,
+  },
+  {
+    id: 3,
+    name: ".redux",
+    value: 85,
+    delay: 1.4,
+  },
+  {
+    id: 4,
+    name: ".shopify",
+    value: 80,
+    delay: 1.6,
+  },
+  {
+    id: 5,
+    name: ".wordpress",
+    value: 75,
+    delay: 1.8,
+  },
+  {
+    id: 6,
+    name: ".reactNative",
+    value: 70,
+    delay: 2,
+  },
+  {
+    id: 7,
+    name: ".flutter",
+    value: 65,
+    delay: 2.2,
+  },
+];

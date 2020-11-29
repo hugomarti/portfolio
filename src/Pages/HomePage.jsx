@@ -1,22 +1,16 @@
 import React from "react";
-import { Flex, Heading, Text } from "@chakra-ui/core";
+import { Flex, Heading } from "@chakra-ui/core";
 import HomeBgImage from "../assets/home.png";
 
-import BigImage from "../components/BigImage";
-import PageLayout from "../components/PageLayout";
-import ContentaLayout from "../components/ContentLayout";
+import BigImage from "../components/SiteComponents/BigImage";
+import PageLayout from "../components/Layout/PageLayout";
+import ContentaLayout from "../components/Layout/ContentLayout";
 
 const HomePage = () => {
   return (
     <PageLayout>
       <BigImage image={HomeBgImage} />
-      <ContentaLayout
-        footerText={
-          <Text>
-            I am a frontend web developer <br /> based in Barcelona.
-          </Text>
-        }
-      >
+      <ContentaLayout footerText>
         <Flex
           flexDir="column"
           justifyContent="center"

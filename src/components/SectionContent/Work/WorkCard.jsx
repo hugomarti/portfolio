@@ -1,17 +1,17 @@
 import React from "react";
-import { Flex, Image, Text } from "@chakra-ui/core";
+import { chakra, Flex, Text } from "@chakra-ui/core";
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const MotionBox = motion.custom(Flex);
-const MotionBox2 = motion.custom(Image);
+const MotionBox2 = chakra(motion.img);
 
 const WorkCard = ({ data: { logo, title, route } }) => {
   const history = useHistory();
   return (
     <Flex
       cursor="pointer"
-      h="334px"
+      h="280px"
       p="1rem"
       flexDir="column"
       rounded="md"
