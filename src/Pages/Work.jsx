@@ -1,32 +1,18 @@
 import React from "react";
-import { SimpleGrid, Box, Heading } from "@chakra-ui/core";
 
-import WorkImage from "../assets/work.png";
-import WorkCard from "../components/WorkCard";
-import LinkAndStuff from "../components/LinksAndStuff";
-import BigImage from "../components/BigImage";
-import PageLayout from "../components/PageLayout";
+import WorkBgImage from "../assets/work.png";
+import ContentaLayout from "../components/Layout/ContentLayout";
+import BigImage from "../components/SiteComponents/BigImage";
+import PageLayout from "../components/Layout/PageLayout";
+import WorkCards from "../components/SectionContent/Work/WorkCards";
 
 const Work = ({ cards }) => {
   return (
     <PageLayout>
-      <BigImage image={WorkImage} />
-      <LinkAndStuff footer="Kamalele">
-        <Box>
-          <Heading size="2xl" color="#EB5E28" mb="1rem">
-            .work
-          </Heading>
-          <SimpleGrid
-            maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
-            columns={{ xl: 2, lg: 2, md: 2, base: 1 }}
-            spacing="0.5rem"
-          >
-            {cards.map((card) => (
-              <WorkCard key={card.id} data={card} />
-            ))}
-          </SimpleGrid>
-        </Box>
-      </LinkAndStuff>
+      <BigImage image={WorkBgImage} />
+      <ContentaLayout footer="Kamalele">
+        <WorkCards cards={cards} />
+      </ContentaLayout>
     </PageLayout>
   );
 };

@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* border: 1px solid green; */
+  -webkit-text-fill-color: #ccc5b9;
+  -webkit-box-shadow: 0 0 0px 1000px #403d39 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

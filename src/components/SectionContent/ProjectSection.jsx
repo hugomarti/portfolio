@@ -1,12 +1,26 @@
 import React from "react";
 import { Box, Button, Flex, Heading, Image, Link, Text } from "@chakra-ui/core";
+import { TiArrowBackOutline } from "react-icons/ti";
+import { useHistory } from "react-router-dom";
 
 const ProjectSection = ({ data }) => {
+  const history = useHistory();
   return (
     <Box>
-      <Heading mb="1rem" size="2xl" color="#EB5E28">
-        {data.title}
-      </Heading>
+      <Flex alignItems="center" mb="1rem">
+        <Box
+          as={TiArrowBackOutline}
+          color="#CCC5B9"
+          boxSize="2rem"
+          mr="0.5rem"
+          onClick={() => history.push("/work")}
+          cursor="pointer"
+          _hover={{ color: "#CC5325" }}
+        />
+        <Heading size="2xl" color="#EB5E28">
+          {data.title}
+        </Heading>
+      </Flex>
 
       <Flex
         flexDir="column"
@@ -34,7 +48,13 @@ const ProjectSection = ({ data }) => {
             </Button>
           </Link>
           <Link href={data.sourceCode} isExternal>
-            <Button ml="1rem" mt="2rem" bg="#CCC5B9" _hover={{ bg: "#A9A49C" }}>
+            <Button
+              disabled={data.disableButton}
+              ml="1rem"
+              mt="2rem"
+              bg="#CCC5B9"
+              _hover={{ bg: "#A9A49C" }}
+            >
               Source Code
             </Button>
           </Link>
