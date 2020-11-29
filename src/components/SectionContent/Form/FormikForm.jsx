@@ -56,6 +56,8 @@ const FormikForm = ({ submited }) => {
       }) => (
         <Box w="100%">
           <form name="contact" data-netlify={true} method="post">
+            <input type="hidden" name="form-name"></input>
+            <input type="hidden" name="bot-field"></input>
             <FormControl>
               <FormLabel color="#CCC5B9">Name:</FormLabel>
               <Input
