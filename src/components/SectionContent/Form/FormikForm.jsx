@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/core";
 import * as Yup from "yup";
 import { FiSend } from "react-icons/fi";
-import { Formik } from "formik";
+import { Field, Formik } from "formik";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string(),
@@ -28,7 +28,13 @@ const encode = (data) => {
 const FormikForm = ({ submited }) => {
   return (
     <Formik
-      initialValues={{ name: "", email: "", message: "" }}
+      initialValues={{
+        "bot-field": "",
+        "form-name": "contact",
+        name: "",
+        email: "",
+        message: "",
+      }}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         fetch("/", {
@@ -55,6 +61,8 @@ const FormikForm = ({ submited }) => {
         setFieldTouched,
       }) => (
         <Box w="100%">
+          <Field type="hidden" name="bot-field" />
+          <Field type="hidden" name="form-name" />
           <form name="contact" data-netlify={true} method="post">
             <input type="hidden" name="form-name"></input>
             <input type="hidden" name="bot-field"></input>
