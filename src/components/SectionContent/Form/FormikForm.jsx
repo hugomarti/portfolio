@@ -34,10 +34,7 @@ const FormikForm = ({ submited }) => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({
-            "form-name": "contact",
-            ...values,
-          }),
+          body: encode({ "form-name": "contact", ...values }),
         })
           .then(() => {
             submited(true);
@@ -58,69 +55,73 @@ const FormikForm = ({ submited }) => {
         setFieldTouched,
       }) => (
         <Box w="100%">
-          <FormControl>
-            <FormLabel color="#CCC5B9">Name:</FormLabel>
-            <Input
-              variant="flushed"
-              color="#CCC5B9"
-              style={{ borderColor: "#CCC5B9" }}
-              name="name"
-              onChange={handleChange}
-            />
-          </FormControl>
-          <FormControl isRequired>
-            <FormLabel color="#CCC5B9" mt="1rem">
-              Email:
-            </FormLabel>
-            <Input
-              variant="flushed"
-              color="#CCC5B9"
-              style={{ borderColor: "#CCC5B9" }}
-              name="email"
-              onChange={handleChange}
-              onBlur={() => setFieldTouched("email")}
-            />
-            {!touched.email || !errors.email ? null : (
-              <FormHelperText color="orange.100">{errors.email}</FormHelperText>
-            )}
-          </FormControl>
-          <FormControl isRequired>
-            <FormLabel color="#CCC5B9" mt="1rem">
-              Message:
-            </FormLabel>
-            <Textarea
-              variant="flushed"
-              color="#CCC5B9"
-              style={{ borderColor: "#CCC5B9" }}
-              name="message"
-              onChange={handleChange}
-              onBlur={() => setFieldTouched("message")}
-            />
-            {!touched.message || !errors.message ? null : (
-              <FormHelperText color="orange.100">
-                {errors.message}
-              </FormHelperText>
-            )}
-          </FormControl>
-          <Flex
-            mt="1rem"
-            flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
-            alignItems="flex-start"
-            w="100%"
-          >
-            <Button
-              leftIcon={<FiSend />}
+          <form name="contact" data-netlify={true} method="post">
+            <FormControl>
+              <FormLabel color="#CCC5B9">Name:</FormLabel>
+              <Input
+                variant="flushed"
+                color="#CCC5B9"
+                style={{ borderColor: "#CCC5B9" }}
+                name="name"
+                onChange={handleChange}
+              />
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel color="#CCC5B9" mt="1rem">
+                Email:
+              </FormLabel>
+              <Input
+                variant="flushed"
+                color="#CCC5B9"
+                style={{ borderColor: "#CCC5B9" }}
+                name="email"
+                onChange={handleChange}
+                onBlur={() => setFieldTouched("email")}
+              />
+              {!touched.email || !errors.email ? null : (
+                <FormHelperText color="orange.100">
+                  {errors.email}
+                </FormHelperText>
+              )}
+            </FormControl>
+            <FormControl isRequired>
+              <FormLabel color="#CCC5B9" mt="1rem">
+                Message:
+              </FormLabel>
+              <Textarea
+                variant="flushed"
+                color="#CCC5B9"
+                style={{ borderColor: "#CCC5B9" }}
+                name="message"
+                onChange={handleChange}
+                onBlur={() => setFieldTouched("message")}
+              />
+              {!touched.message || !errors.message ? null : (
+                <FormHelperText color="orange.100">
+                  {errors.message}
+                </FormHelperText>
+              )}
+            </FormControl>
+            <Flex
               mt="1rem"
-              bg="#EB5E28"
-              _hover={{ bg: "#CC5325" }}
-              size="sm"
-              onClick={handleSubmit}
-              isLoading={isSubmitting}
-              loadingText="Enviando..."
+              flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
+              alignItems="flex-start"
+              w="100%"
             >
-              Send
-            </Button>
-          </Flex>
+              <Button
+                leftIcon={<FiSend />}
+                mt="1rem"
+                bg="#EB5E28"
+                _hover={{ bg: "#CC5325" }}
+                size="sm"
+                onClick={handleSubmit}
+                isLoading={isSubmitting}
+                loadingText="Enviando..."
+              >
+                Send
+              </Button>
+            </Flex>
+          </form>
         </Box>
       )}
     </Formik>

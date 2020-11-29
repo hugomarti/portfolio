@@ -15,7 +15,12 @@ const FormSection = () => {
       )}
       <CardLayout>
         {submited ? (
-          <Flex alignItems="center" flexDir="column">
+          <Flex
+            alignItems="center"
+            justifyContent="center"
+            flexDir="column"
+            w="100%"
+          >
             <Heading color="#EB5E28" size="lg">
               Thanks for your message!
             </Heading>
