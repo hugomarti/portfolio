@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Image, Text, Heading, Flex, Button } from "@chakra-ui/core";
+import { Box, Image, Text, Heading, Flex, Button, Link } from "@chakra-ui/core";
 import { MdLanguage } from "react-icons/md";
 
 import Hugo from "../../assets/hugo.png";
@@ -40,17 +40,23 @@ const AboutCard = () => {
             >
               {spanish ? "See in English" : "Ver en Español"}
             </Button>
-            <Button
-              mb={{ xl: "", lg: "", md: "", base: "1rem" }}
-              leftIcon={<FiDownloadCloud />}
-              color="#CCC5B9"
-              colorScheme="orange"
-              variant="ghost"
-              size="xs"
-              mt="0.5rem"
+            <Link
+              href="https://drive.google.com/file/d/1Vjb7MFBP_BBU0QJSSICvmS6iDsVuFi0D/view?usp=sharing"
+              isExternal
             >
-              Download CV
-            </Button>
+              <Button
+                href="https://drive.google.com/file/d/1Vjb7MFBP_BBU0QJSSICvmS6iDsVuFi0D/view?usp=sharing"
+                mb={{ xl: "", lg: "", md: "", base: "1rem" }}
+                leftIcon={<FiDownloadCloud />}
+                color="#CCC5B9"
+                colorScheme="orange"
+                variant="ghost"
+                size="xs"
+                mt="0.5rem"
+              >
+                Download CV
+              </Button>
+            </Link>
           </Flex>
         </Flex>
         <Box>
