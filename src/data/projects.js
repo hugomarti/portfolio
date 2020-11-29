@@ -45,7 +45,7 @@ export const projectPages = {
     title: ".stemHatch",
     description:
       "Stem Hatch is a personal project currently under development, focused on selling music online, where music producers can sell their music copy rights to DJs and content creators. Made with React, Redux, styled with Chakra UI and a previous UI and graphic design made with Figma and Illustrator",
-    link: "https://lupas-de-sol.web.app/",
+    link: "https://youthful-curran-2c56a6.netlify.app/",
     sourceCode: "https://github.com/hugomarti/stem-hatch-2",
   },
   lupasDeSol: {
