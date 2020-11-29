@@ -47,6 +47,7 @@ export const projectPages = {
       "Stem Hatch is a personal project currently under development, focused on selling music online, where music producers can sell their music copy rights to DJs and content creators. Made with React, Redux, styled with Chakra UI and a previous UI and graphic design made with Figma and Illustrator",
     link: "https://youthful-curran-2c56a6.netlify.app/",
     sourceCode: "https://github.com/hugomarti/stem-hatch-2",
+    disableButton: true,
   },
   lupasDeSol: {
     bgImage: Project2BgImage,
@@ -57,6 +58,7 @@ export const projectPages = {
       "Sunglasses eCommerce simulation. Products are organized by genres and collections, all the database and authorization is handled by Firebase and Stripe for payments. Made with React, Redux, styled with Grommet UI and a previous UI and graphic design made with Figma and Illustrator.",
     link: "https://lupas-de-sol.web.app/",
     sourceCode: "https://github.com/hugomarti/lupas-de-sol",
+    disableButton: false,
   },
   movieDatabase: {
     bgImage: Project3BgImage,
@@ -67,6 +69,7 @@ export const projectPages = {
       "Movie Database using TMBD API, I included features like search movies, filter by genres, play trailers etc... Made with React, Redux, Axios and styled with Grommet UI.Sunglasses eCommerce simulation. Products are organized by genres and collections, all the database and authorization is handled by Firebase and Stripe for payments. Made with React, Redux, styled with Grommet UI and a previous UI and graphic design made with Figma and Illustrator.",
     link: "https://5f9c00fae996fa096347eccb--popcorn-movie.netlify.app/",
     sourceCode: "https://github.com/hugomarti/popcorn-db",
+    disableButton: false,
   },
   eightBit: {
     bgImage: Project4BgImage,
@@ -77,6 +80,7 @@ export const projectPages = {
       "Game eCommerce simulation, where you can add and delete products in the cart. Made with React, Redux, and Chakra UI.",
     link: "https://5f9c005a668f071cbccc7837--8bit-store.netlify.app/",
     sourceCode: "https://github.com/hugomarti/8bit-ecomerce",
+    disableButton: false,
   },
 };
 

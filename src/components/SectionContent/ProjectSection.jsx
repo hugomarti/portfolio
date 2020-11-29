@@ -47,7 +47,13 @@ const ProjectSection = ({ data }) => {
             </Button>
           </Link>
           <Link href={data.sourceCode} isExternal>
-            <Button ml="1rem" mt="2rem" bg="#CCC5B9" _hover={{ bg: "#A9A49C" }}>
+            <Button
+              disabled={data.disableButton}
+              ml="1rem"
+              mt="2rem"
+              bg="#CCC5B9"
+              _hover={{ bg: "#A9A49C" }}
+            >
               Source Code
             </Button>
           </Link>
