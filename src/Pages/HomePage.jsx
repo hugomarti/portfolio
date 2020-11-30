@@ -20,7 +20,12 @@ const HomePage = () => {
         >
           <Heading
             color="#EB5E28"
-            fontSize={{ xl: "4rem", lg: "4rem", md: "4rem", base: "2rem" }}
+            fontSize={{
+              xl: "3.5rem",
+              lg: "3.5rem",
+              md: "3.5rem",
+              base: "2rem",
+            }}
             mb={{ xl: "1rem", lg: "1rem", md: "1rem", base: "0" }}
           >
             FRONTEND
@@ -28,7 +33,12 @@ const HomePage = () => {
           <Heading
             zIndex="1"
             color="#CCC5B9"
-            fontSize={{ xl: "4rem", lg: "4rem", md: "4rem", base: "2rem" }}
+            fontSize={{
+              xl: "3.5rem",
+              lg: "3.5rem",
+              md: "3.5rem",
+              base: "2rem",
+            }}
             lineHeight={{ xl: "5rem", lg: "5rem", md: "5rem", base: "3rem" }}
           >
             WEB DEVELOPER

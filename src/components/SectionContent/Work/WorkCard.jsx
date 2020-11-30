@@ -11,7 +11,7 @@ const WorkCard = ({ data: { logo, title, route } }) => {
   return (
     <Flex
       cursor="pointer"
-      h="280px"
+      h="275px"
       p="1rem"
       flexDir="column"
       rounded="md"

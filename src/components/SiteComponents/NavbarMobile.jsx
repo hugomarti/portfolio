@@ -16,15 +16,19 @@ export const NavbarMobile = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <React.Fragment>
-      <Box
-        cursor="pointer"
-        as={BiMenu}
-        h="2.5rem"
-        w="2.5rem"
-        color="#CCC5B9"
-        onClick={onOpen}
-      />
+    <Box>
+      {!isOpen && (
+        <Box
+          cursor="pointer"
+          as={BiMenu}
+          h="2.5rem"
+          w="2.5rem"
+          color="#CCC5B9"
+          onClick={onOpen}
+          zIndex="900000000000000000000"
+        />
+      )}
+
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -41,6 +45,6 @@ export const NavbarMobile = () => {
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>
-    </React.Fragment>
+    </Box>
   );
 };

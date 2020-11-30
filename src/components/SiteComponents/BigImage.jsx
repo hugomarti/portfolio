@@ -16,7 +16,7 @@ const BigImage = ({ image }) => {
       bgSize="cover"
       bgPos="50% 50%"
       w={{ xl: "30%", lg: "30%", md: "30%", base: "100vw" }}
-      h={{ xl: "100vh", lg: "100vh", md: "100vh", base: "8vh" }}
+      h={{ xl: "100vh", lg: "100vh", md: "100vh", base: "10vh" }}
       shadow="lg"
     />
   );

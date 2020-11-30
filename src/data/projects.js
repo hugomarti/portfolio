@@ -1,7 +1,7 @@
-import StemHatchLogo from "../assets/stemHatchLogo.svg";
-import LupasDeSolLogo from "../assets/lupasDeSolLogo.svg";
-import MovieDatabaseLogo from "../assets/movieDatabaseLogo.svg";
-import BitLogo from "../assets/8bitLogo.svg";
+import StemHatchLogo2 from "../assets/stemHatchLogo2.svg";
+import LupasDeSolLogo2 from "../assets/lupasDeSolLogo2.svg";
+import MovieDatabaseLogo2 from "../assets/movieDatabaseLogo2.svg";
+import BitLogo2 from "../assets/8bitLogo2.svg";
 import Project1BgImage from "../assets/projectImage1.png";
 import Project2BgImage from "../assets/projectImage2.png";
 import Project3BgImage from "../assets/projectImage3.png";
@@ -11,27 +11,27 @@ export const cards = [
   {
     id: 1,
     title: "Digital Music Store",
-    logo: StemHatchLogo,
+    logo: StemHatchLogo2,
     route: "project/stemHatch",
   },
   {
     id: 2,
     title: "Sunglasses eComerce",
-    logo: LupasDeSolLogo,
+    logo: LupasDeSolLogo2,
     route: "project/lupasDeSol",
   },
 
   {
     id: 3,
     title: "Movie Database",
-    logo: MovieDatabaseLogo,
+    logo: MovieDatabaseLogo2,
     route: "project/movieDatabase",
     link: "",
   },
   {
     id: 4,
     title: "Game Items Store",
-    logo: BitLogo,
+    logo: BitLogo2,
     route: "project/eightBit",
     link: "",
   },
@@ -40,7 +40,7 @@ export const cards = [
 export const projectPages = {
   stemHatch: {
     bgImage: Project1BgImage,
-    logo: StemHatchLogo,
+    logo: StemHatchLogo2,
     type: "Digital Music Store",
     title: ".stemHatch",
     description:
@@ -51,7 +51,7 @@ export const projectPages = {
   },
   lupasDeSol: {
     bgImage: Project2BgImage,
-    logo: LupasDeSolLogo,
+    logo: LupasDeSolLogo2,
     type: "Sunglasses eCormerce",
     title: ".lupasDeSol",
     description:
@@ -62,7 +62,7 @@ export const projectPages = {
   },
   movieDatabase: {
     bgImage: Project3BgImage,
-    logo: MovieDatabaseLogo,
+    logo: MovieDatabaseLogo2,
     type: "Movie Database",
     title: ".movieDatabase",
     description:
@@ -73,7 +73,7 @@ export const projectPages = {
   },
   eightBit: {
     bgImage: Project4BgImage,
-    logo: BitLogo,
+    logo: BitLogo2,
     type: "Game Items Store",
     title: "8Bit",
     description:

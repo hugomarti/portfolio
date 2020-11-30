@@ -7,7 +7,7 @@ const ProjectSection = ({ data }) => {
   const history = useHistory();
   return (
     <Box>
-      <Flex alignItems="center" mb="1rem">
+      <Flex alignItems="center">
         <Box
           as={TiArrowBackOutline}
           color="#CCC5B9"
@@ -17,7 +17,7 @@ const ProjectSection = ({ data }) => {
           cursor="pointer"
           _hover={{ color: "#CC5325" }}
         />
-        <Heading size="2xl" color="#EB5E28">
+        <Heading letterSpacing="0.1rem" fontSize="1.8rem" color="#EB5E28">
           {data.title}
         </Heading>
       </Flex>
@@ -29,10 +29,9 @@ const ProjectSection = ({ data }) => {
         p="1rem"
         bg="#403D39"
         maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
-        h="34rem"
       >
         <Flex flexDir="column">
-          <Image src={data.logo} />
+          <Image src={data.logo} mt="1rem" />
           <Box my="1rem">
             <Heading color="#EB5E28" size="md">
               React

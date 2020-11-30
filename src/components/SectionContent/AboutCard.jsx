@@ -1,19 +1,18 @@
 import React, { useState } from "react";
-import { Box, Image, Text, Heading, Flex, Button, Link } from "@chakra-ui/core";
+import { Box, Image, Text, Flex, Button, Link } from "@chakra-ui/core";
 import { MdLanguage } from "react-icons/md";
 
 import Hugo from "../../assets/hugo.png";
 import CardLayout from "../Layout/CardLayout";
 import { FiDownloadCloud } from "react-icons/fi";
+import CardHeading from "../SiteComponents/CardHeading";
 
 const AboutCard = () => {
   const [spanish, setSpanish] = useState(false);
 
   return (
     <Box>
-      <Heading letterSpacing="0.1rem" size="2xl" color="#EB5E28" mb="1rem">
-        .about
-      </Heading>
+      <CardHeading name=".about" />
       <CardLayout>
         <Flex
           flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}

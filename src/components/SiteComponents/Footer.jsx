@@ -10,8 +10,8 @@ const Footer = ({ footerText }) => {
   return (
     <Flex
       mt="2rem"
-      alignItems="center"
-      justifyContent="space-between"
+      alignItems="flex-end"
+      justifyContent={footerText ? "space-between" : "flex-end"}
       zIndex="10"
       flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}
     >
@@ -26,7 +26,7 @@ const Footer = ({ footerText }) => {
           <Box
             color="#CCC5B9"
             _hover={{ color: "#EB5E28" }}
-            boxSize="2.2rem"
+            boxSize="1.7rem"
             as={IoLogoLinkedin}
           />
         </Link>
@@ -34,7 +34,7 @@ const Footer = ({ footerText }) => {
           <Box
             color="#CCC5B9"
             _hover={{ color: "#EB5E28" }}
-            boxSize="2.2rem"
+            boxSize="1.7rem"
             as={IoLogoGithub}
           />
         </Link>
@@ -42,7 +42,7 @@ const Footer = ({ footerText }) => {
           <Box
             color="#CCC5B9"
             _hover={{ color: "#EB5E28" }}
-            boxSize="2.2rem"
+            boxSize="1.7rem"
             as={FiMail}
           />
         </Link>

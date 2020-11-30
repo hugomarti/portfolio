@@ -6,9 +6,9 @@ import NavGroupLinks from "./NavGroupLinks";
 
 const NavBar = () => {
   const history = useHistory();
-  const [isLargerThan767] = useMediaQuery("(min-width: 767px)");
+  const [isLarger] = useMediaQuery("(min-width: 1030px)");
   return (
-    <Flex justifyContent="space-between" zIndex="1">
+    <Flex justifyContent="space-between" zIndex="10000000000000000">
       <Flex alignItems="start">
         <Heading
           cursor="pointer"
@@ -17,9 +17,9 @@ const NavBar = () => {
           }}
           color="#CCC5B9"
           fontSize={{
-            xl: "2.2rem",
-            lg: "2.2rem",
-            md: "2.2rem",
+            xl: "1.8rem",
+            lg: "1.8rem",
+            md: "1.8rem",
             base: "1.5rem",
           }}
           _hover={{ color: "#EB5E28" }}
@@ -27,7 +27,7 @@ const NavBar = () => {
           .hugoMarti
         </Heading>
       </Flex>
-      {isLargerThan767 ? <NavGroupLinks /> : <NavbarMobile />}
+      {isLarger ? <NavGroupLinks /> : <NavbarMobile />}
     </Flex>
   );
 };

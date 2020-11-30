@@ -1,18 +1,17 @@
 import React from "react";
-import { Box, Flex, Heading, Progress, Text } from "@chakra-ui/core";
+import { Box, Flex, Progress, Text } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 import { skillsData } from "../../data/projects";
 
 import CardLayout from "../Layout/CardLayout";
+import CardHeading from "../SiteComponents/CardHeading";
 
 const MotionBox = motion.custom(Box);
 
 const SkillsSection = () => {
   return (
     <Box>
-      <Heading letterSpacing="0.1rem" mb="1rem" size="2xl" color="#EB5E28">
-        .skills
-      </Heading>
+      <CardHeading name=".skills" />
       <CardLayout>
         <Flex flexDir="column" w="100%">
           {skillsData.map((skill) => (
