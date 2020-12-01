@@ -10,7 +10,12 @@ const Footer = ({ footerText }) => {
   return (
     <Flex
       mt="2rem"
-      alignItems="flex-end"
+      alignItems={{
+        xl: "flex-end",
+        lg: "flex-end",
+        md: "flex-end",
+        base: "center",
+      }}
       justifyContent={footerText ? "space-between" : "flex-end"}
       zIndex="10"
       flexDir={{ xl: "row", lg: "row", md: "row", base: "column" }}

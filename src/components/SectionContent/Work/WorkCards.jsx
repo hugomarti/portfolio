@@ -6,7 +6,7 @@ import CardHeading from "../../SiteComponents/CardHeading";
 
 const WorkCards = ({ cards }) => {
   return (
-    <Box>
+    <Box zIndex="1">
       <CardHeading name=".work" />
       <SimpleGrid
         // maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}

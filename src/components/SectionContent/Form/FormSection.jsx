@@ -8,7 +8,7 @@ import CardHeading from "../../SiteComponents/CardHeading";
 const FormSection = () => {
   const [submited, setSubmited] = useState(false);
   return (
-    <Box>
+    <Box zIndex="1">
       <CardHeading name=".sayHello" />
       <CardLayout>
         {submited ? (

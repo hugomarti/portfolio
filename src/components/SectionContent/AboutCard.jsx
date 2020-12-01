@@ -11,7 +11,7 @@ const AboutCard = () => {
   const [spanish, setSpanish] = useState(false);
 
   return (
-    <Box>
+    <Box zIndex="1">
       <CardHeading name=".about" />
       <CardLayout>
         <Flex

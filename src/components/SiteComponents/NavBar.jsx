@@ -8,7 +8,7 @@ const NavBar = () => {
   const history = useHistory();
   const [isLarger] = useMediaQuery("(min-width: 1030px)");
   return (
-    <Flex justifyContent="space-between" zIndex="10000000000000000">
+    <Flex justifyContent="space-between" zIndex="1">
       <Flex alignItems="start">
         <Heading
           cursor="pointer"

@@ -38,7 +38,7 @@ const ContentaLayout = ({ children, footerText, back }) => {
         mt={{ xl: "0", lg: "0", md: "0", base: "2rem" }}
         h="100%"
         w="100%"
-        zIndex="1"
+        // zIndex="1"
       >
         {children}
       </MotionBox>

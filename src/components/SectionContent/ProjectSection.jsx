@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom";
 const ProjectSection = ({ data }) => {
   const history = useHistory();
   return (
-    <Box>
+    <Box zIndex="2">
       <Flex alignItems="center">
         <Box
           as={TiArrowBackOutline}

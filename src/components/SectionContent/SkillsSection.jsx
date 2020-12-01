@@ -10,10 +10,10 @@ const MotionBox = motion.custom(Box);
 
 const SkillsSection = () => {
   return (
-    <Box>
+    <Box zIndex="1">
       <CardHeading name=".skills" />
       <CardLayout>
-        <Flex flexDir="column" w="100%">
+        <Flex flexDir="column" w="100%" zIndex="">
           {skillsData.map((skill) => (
             <MotionBox
               key={skill.id}

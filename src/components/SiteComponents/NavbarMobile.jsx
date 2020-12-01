@@ -25,16 +25,10 @@ export const NavbarMobile = () => {
           w="2.5rem"
           color="#CCC5B9"
           onClick={onOpen}
-          zIndex="900000000000000000000"
         />
       )}
 
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-        zIndex="1000000000000000"
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay>
           <DrawerContent bg="#252422" pt="8vh">
             <DrawerCloseButton />
