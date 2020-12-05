@@ -34,7 +34,7 @@ const AboutCard = () => {
               leftIcon={<MdLanguage />}
               colorScheme="orange"
               variant="ghost"
-              size={{ xl: "xs", lg: "xs", md: "xs", base: "md" }}
+              size={{ xl: "md", lg: "md", md: "md", base: "md" }}
               onClick={() => setSpanish(!spanish)}
             >
               {spanish ? "See in English" : "Ver en Español"}

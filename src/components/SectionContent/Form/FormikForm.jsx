@@ -14,7 +14,7 @@ import { FiSend } from "react-icons/fi";
 import { Field, Formik } from "formik";
 
 const validationSchema = Yup.object().shape({
-  name: Yup.string(),
+  name: Yup.string().required().label("Name"),
   email: Yup.string().email().required().label("Email"),
   message: Yup.string().required().label("Message"),
 });
@@ -75,8 +75,13 @@ const FormikForm = ({ submited }) => {
                 name="name"
                 onChange={handleChange}
               />
+              {!touched.name || !errors.name ? null : (
+                <FormHelperText color="orange.100">
+                  {errors.name}
+                </FormHelperText>
+              )}
             </FormControl>
-            <FormControl isRequired>
+            <FormControl>
               <FormLabel color="#CCC5B9" mt="1rem">
                 Email:
               </FormLabel>
@@ -94,7 +99,7 @@ const FormikForm = ({ submited }) => {
                 </FormHelperText>
               )}
             </FormControl>
-            <FormControl isRequired>
+            <FormControl>
               <FormLabel color="#CCC5B9" mt="1rem">
                 Message:
               </FormLabel>

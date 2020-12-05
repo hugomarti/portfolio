@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading } from "@chakra-ui/core";
+import { Flex, Text } from "@chakra-ui/core";
 import HomeBgImage from "../assets/home.png";
 
 import BigImage from "../components/SiteComponents/BigImage";
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <PageLayout>
       <BigImage image={HomeBgImage} />
-      <ContentaLayout footerText>
+      <ContentaLayout>
         <Flex
           flexDir="column"
           justifyContent="center"
@@ -18,6 +18,18 @@ const HomePage = () => {
           m="auto"
           alignItems={{ xl: "start", lg: "start", md: "start", base: "center" }}
         >
+          <Text
+            fontWeight="600"
+            color="#CCC5B9"
+            textAlign="left"
+            fontSize="2.2rem"
+          >
+            I'm a
+            <br />
+            <span style={{ color: "#EB5E28" }}>Frontend</span> Web Developer
+            <br /> based in Barcelona.
+          </Text>
+          {/*
           <Heading
             color="#EB5E28"
             fontSize={{
@@ -43,6 +55,7 @@ const HomePage = () => {
           >
             WEB DEVELOPER
           </Heading>
+          */}
         </Flex>
       </ContentaLayout>
     </PageLayout>

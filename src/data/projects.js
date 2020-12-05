@@ -6,6 +6,10 @@ import Project1BgImage from "../assets/projectImage1.png";
 import Project2BgImage from "../assets/projectImage2.png";
 import Project3BgImage from "../assets/projectImage3.png";
 import Project4BgImage from "../assets/projectImage4.png";
+import MockupStem from "../assets/mockup-stem.jpg";
+import MockupLupas from "../assets/mockup-lupas.jpg";
+import MockupMovie from "../assets/mockup-movie.jpg";
+import MockupRpg from "../assets/mockup-rpg.jpg";
 
 export const cards = [
   {
@@ -40,18 +44,18 @@ export const cards = [
 export const projectPages = {
   stemHatch: {
     bgImage: Project1BgImage,
-    logo: StemHatchLogo2,
+    mockup: MockupStem,
     type: "Digital Music Store",
     title: ".stemHatch",
     description:
       "Stem Hatch is a personal project currently under development, focused on selling music online, where music producers can sell their music copy rights to DJs and content creators. Made with React, Redux, styled with Chakra UI and a previous UI and graphic design made with Figma and Illustrator",
-    link: "https://youthful-curran-2c56a6.netlify.app/",
+    link: "https://adoring-shaw-3dd89a.netlify.app",
     sourceCode: "https://github.com/hugomarti/stem-hatch-2",
     disableButton: true,
   },
   lupasDeSol: {
     bgImage: Project2BgImage,
-    logo: LupasDeSolLogo2,
+    mockup: MockupLupas,
     type: "Sunglasses eCormerce",
     title: ".lupasDeSol",
     description:
@@ -62,7 +66,7 @@ export const projectPages = {
   },
   movieDatabase: {
     bgImage: Project3BgImage,
-    logo: MovieDatabaseLogo2,
+    mockup: MockupMovie,
     type: "Movie Database",
     title: ".movieDatabase",
     description:
@@ -73,7 +77,7 @@ export const projectPages = {
   },
   eightBit: {
     bgImage: Project4BgImage,
-    logo: BitLogo2,
+    mockup: MockupRpg,
     type: "Game Items Store",
     title: "8Bit",
     description:
