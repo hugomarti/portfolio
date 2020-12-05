@@ -31,7 +31,7 @@ const ProjectSection = ({ data }) => {
         maxWidth={{ xl: "30rem", lg: "30rem", md: "30rem" }}
       >
         <Flex flexDir="column">
-          <Image src={data.logo} mt="1rem" />
+          <Image src={data.mockup} />
           <Box my="1rem">
             <Heading color="#EB5E28" size="md">
               React
