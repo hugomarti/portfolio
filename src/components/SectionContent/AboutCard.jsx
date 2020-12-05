@@ -40,7 +40,7 @@ const AboutCard = () => {
               {spanish ? "See in English" : "Ver en Español"}
             </Button>
             <Link
-              href="https://drive.google.com/file/d/1Vjb7MFBP_BBU0QJSSICvmS6iDsVuFi0D/view?usp=sharing"
+              href="https://drive.google.com/file/d/17kshDWSkSurEFlnHouD9UhOLx3j9JbHU/view?usp=sharing"
               isExternal
             >
               <Button
